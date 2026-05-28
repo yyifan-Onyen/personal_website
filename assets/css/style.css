@@ -120,6 +120,12 @@ a:hover { text-decoration: underline; text-underline-offset: 3px; }
   color: var(--accent);
   font-size: 1.02rem;
 }
+.links .ico {
+  width: 20px;
+  height: 18px;
+  flex-shrink: 0;
+  fill: var(--accent);
+}
 
 /* ---------- Section blocks ---------- */
 .block { margin-bottom: 40px; }
