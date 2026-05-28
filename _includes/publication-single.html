@@ -1,0 +1,46 @@
+{% include base_path %}
+
+<div class="pub-item">
+  <h3 class="pub-title">
+    {% if post.paperurl %}
+      <a href="{{ post.paperurl }}">{{ post.title }}</a>
+    {% else %}
+      <a href="{{ base_path }}{{ post.url }}">{{ post.title }}</a>
+    {% endif %}
+  </h3>
+
+  {% if post.authors %}
+    <p class="pub-authors">{{ post.authors }}</p>
+  {% endif %}
+
+  {% if post.venue %}
+    <p class="pub-venue"><em>{{ post.venue }}</em></p>
+  {% endif %}
+
+  {% if post.excerpt %}
+    <p class="pub-excerpt">{{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}</p>
+  {% endif %}
+
+  <p class="pub-links">
+    {% assign sep = '' %}
+    {% if post.paperurl %}
+      {{ sep }}<a href="{{ post.paperurl }}"><i class="fas fa-file-pdf" aria-hidden="true"></i> Paper</a>
+      {% assign sep = '<span class="pub-sep">&middot;</span>' %}
+    {% endif %}
+    {% if post.codeurl %}
+      {{ sep }}<a href="{{ post.codeurl }}"><i class="fab fa-github" aria-hidden="true"></i> Code</a>
+      {% assign sep = '<span class="pub-sep">&middot;</span>' %}
+    {% endif %}
+    {% if post.dataseturl %}
+      {{ sep }}<a href="{{ post.dataseturl }}"><i class="fas fa-database" aria-hidden="true"></i> Dataset</a>
+      {% assign sep = '<span class="pub-sep">&middot;</span>' %}
+    {% endif %}
+    {% if post.slidesurl %}
+      {{ sep }}<a href="{{ post.slidesurl }}"><i class="fas fa-desktop" aria-hidden="true"></i> Slides</a>
+      {% assign sep = '<span class="pub-sep">&middot;</span>' %}
+    {% endif %}
+    {% if post.bibtexurl %}
+      {{ sep }}<a href="{{ post.bibtexurl }}"><i class="fas fa-quote-right" aria-hidden="true"></i> BibTeX</a>
+    {% endif %}
+  </p>
+</div>
