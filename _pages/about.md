@@ -19,6 +19,8 @@ My research interests lie in:
 
 News
 ======
+- **2026.08**: 🎉 *SCOPE* is accepted to **EMNLP 2026 (Main)**.
+- **2026.08**: 🎉 Our tutorial *AI Scientist: Persistent Scientific Systems with Memory, Verification, and Human Governance* is accepted to **AACL-IJCNLP 2026**.
 - **2026.07**: 🎉 *RadFabric* is accepted for publication in **npj Digital Medicine**.
 - **2026.07**: 🎉 *StraTA* is accepted to the **ICML 2026 FAGEN Workshop**.
 - **2026.05**: 🎉 *Scaling Behaviors of LLM RL Post-Training* is accepted to **ACL 2026 (Main)**.

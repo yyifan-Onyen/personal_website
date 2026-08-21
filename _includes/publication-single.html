@@ -13,6 +13,10 @@
     <p class="pub-authors">{{ post.authors }}</p>
   {% endif %}
 
+  {% if post.author_note %}
+    <p class="pub-author-note">{{ post.author_note }}</p>
+  {% endif %}
+
   {% if post.venue %}
     <p class="pub-venue"><em>{{ post.venue }}</em></p>
   {% endif %}
@@ -24,7 +28,11 @@
   <p class="pub-links">
     {% assign sep = '' %}
     {% if post.paperurl %}
-      {{ sep }}<a href="{{ post.paperurl }}"><i class="fas fa-file-pdf" aria-hidden="true"></i> Paper</a>
+      {{ sep }}<a href="{{ post.paperurl }}"><i class="fas fa-file-pdf" aria-hidden="true"></i> {{ post.paper_label | default: 'Paper' }}</a>
+      {% assign sep = '<span class="pub-sep">&middot;</span>' %}
+    {% endif %}
+    {% if post.websiteurl %}
+      {{ sep }}<a href="{{ post.websiteurl }}"><i class="fas fa-globe" aria-hidden="true"></i> {{ post.website_label | default: 'Website' }}</a>
       {% assign sep = '<span class="pub-sep">&middot;</span>' %}
     {% endif %}
     {% if post.codeurl %}

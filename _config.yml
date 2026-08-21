@@ -87,6 +87,8 @@ publication_category:
     title: 'Conference Papers'
   manuscripts:
     title: 'Journal Articles'
+  tutorials:
+    title: 'Tutorials'
   preprints:
     title: 'Preprints'
 
