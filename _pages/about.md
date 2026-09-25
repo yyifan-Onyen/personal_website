@@ -19,6 +19,7 @@ My research interests lie in:
 
 News
 ======
+- **2026.09**: 🎉 *StraTA* and *A World Model of Radiologist Reading for Medical Image Representation Learning* are accepted to **NeurIPS 2026 (Poster)**.
 - **2026.08**: 🎉 *SCOPE* is accepted to **EMNLP 2026 (Main)**.
 - **2026.08**: 🎉 Our tutorial *AI Scientist: Persistent Scientific Systems with Memory, Verification, and Human Governance* is accepted to **AACL-IJCNLP 2026**.
 - **2026.07**: 🎉 *RadFabric* is accepted for publication in **npj Digital Medicine**.
